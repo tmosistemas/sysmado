@@ -7,8 +7,8 @@ class ChamadoHelper {
 
 	static function jsonResponse( $error = true, $message = '', $data = array() ) {
 
-		$app               = Slim::getInstance();
-		$response          = new stdClass();
+		$app               = \Slim::getInstance();
+		$response          = new \stdClass();
 		$response->error   = $error;
 		$response->message = $message;
 		$response->data    = $data;
