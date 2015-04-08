@@ -1,0 +1,14 @@
+{
+	
+    "require": {
+        "slim/slim": "~2.6",
+        "illuminate/database": "5.0.27"
+    },
+    "autoload": {
+        "psr-4": {
+            "Api\\": "api/",
+            "Test\\": "tests/"
+        }
+
+    }
+}

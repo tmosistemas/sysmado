@@ -1,0 +1,9 @@
+nbproject/
+app/vendor/*
+
+# but not these files...
+!app/vendor/autoload.php
+!app/vendor/composer/
+
+.idea/
+tests/log/*

@@ -22,11 +22,12 @@
     <br>
     <table border='1'>
       <thead align="center">
-        <th colspan="5">Chamados no mês</th>
+        <th colspan="6">Chamados no mês</th>
       </thead>
       <tbody>
         <tr>
           <td>Número</td>
+          <td>Solicitado Por</td>
           <td>Data/Hora</td>
           <td>Descrição</td>
           <td>Status</td>
@@ -34,6 +35,7 @@
         </tr>
         <tr ng-repeat="chamados in lista">
           <td>{{chamados.chamado}}</td>
+          <td>{{chamados.solicitado_por}}</td>
           <td>{{chamados.data_hora}}</td>
           <td>{{chamados.descricao}}</td>
           <td>{{chamados.status}}</td>
@@ -42,6 +44,8 @@
       </tbody>
     </table>
 
+    <div ng-controller="ChamadosCtrl"></div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -49,6 +53,7 @@
     <!--Angular.js -->
     <script src="js/angular.min.js"></script>
     <!--Others -->
-    <script src="js/main.js"></script>
+    <script src="js/Main.js"></script>
+    <script src="js/Request.js"></script>
   </body>
 </html>
